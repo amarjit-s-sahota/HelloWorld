@@ -85,9 +85,30 @@
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-6e-ZTg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-6e-ZTg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-7f-pAc">
+                                                            <rect key="frame" x="16" y="15.000000000000002" width="74" height="19.666666666666671"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sF0-cB-t1m">
+                                                            <rect key="frame" x="299.66666666666669" y="16" width="54.333333333333314" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" red="0.34765323668574111" green="1" blue="0.91111843709025264" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="sF0-cB-t1m" secondAttribute="trailing" constant="21" id="3Wg-Ht-M3N"/>
+                                                        <constraint firstItem="DOf-7f-pAc" firstAttribute="top" secondItem="1bJ-6e-ZTg" secondAttribute="top" constant="15" id="KgS-vx-2lm"/>
+                                                        <constraint firstItem="DOf-7f-pAc" firstAttribute="leading" secondItem="1bJ-6e-ZTg" secondAttribute="leading" constant="16" id="haS-jU-gTV"/>
+                                                        <constraint firstItem="DOf-7f-pAc" firstAttribute="centerY" secondItem="1bJ-6e-ZTg" secondAttribute="centerY" id="iRO-ed-QWS"/>
+                                                        <constraint firstItem="sF0-cB-t1m" firstAttribute="centerY" secondItem="DOf-7f-pAc" secondAttribute="centerY" id="uGA-6Z-6aG"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -96,6 +117,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="1bJ-6e-ZTg" secondAttribute="trailing" id="SB9-Xn-1hc"/>
                                                 <constraint firstItem="1bJ-6e-ZTg" firstAttribute="leading" secondItem="LcI-i7-uEV" secondAttribute="leading" id="V4O-Kd-0Wg"/>
                                                 <constraint firstAttribute="bottom" secondItem="WBL-cH-xQE" secondAttribute="bottom" id="VPd-F0-UEs"/>
+                                                <constraint firstItem="WBL-cH-xQE" firstAttribute="top" secondItem="1bJ-6e-ZTg" secondAttribute="bottom" constant="9" id="ZzU-IB-A3c"/>
                                                 <constraint firstItem="1bJ-6e-ZTg" firstAttribute="top" secondItem="LcI-i7-uEV" secondAttribute="top" id="gWK-Hv-CyV"/>
                                             </constraints>
                                         </tableViewCellContentView>
